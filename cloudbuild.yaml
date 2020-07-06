@@ -4,7 +4,7 @@ steps:
     name: "gcr.io/cloud-builders/go"
     args: ["version"]
     env: ["GOPATH=."]
- - id: build
+- id: build
     name: "gcr.io/cloud-builders/go"
     args: ["run","CGO_ENABLED=0 go build"]
     env: ["GOPATH=."]

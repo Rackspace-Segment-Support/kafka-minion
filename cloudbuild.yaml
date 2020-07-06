@@ -1,4 +1,10 @@
 # Build the module.
 steps:
-- name: golang
-  args: ['go', 'build', '.']
+- id: go_version
+    name: "gcr.io/cloud-builders/go"
+    args: ["version"]
+    env: ["GOPATH=."]
+ - id: build
+    name: "gcr.io/cloud-builders/go"
+    args: ["run","CGO_ENABLED=0 go build"]
+    env: ["GOPATH=."]

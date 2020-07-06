@@ -3,7 +3,7 @@ steps:
   args: ['generate']
   env: ['PROJECT_ROOT=github.com/Rackspace-Segment-Support/kafka-minion/']
 - name: 'gcr.io/cloud-builders/go'
-  args: ['install', '-a', '-ldflags', "'-s'", '-installsuffix', 'cgo', 'github.com/Rackspace-Segment-Support/kafka-minion/']
+  args: [go', 'build' 'github.com/Rackspace-Segment-Support/kafka-minion/']
   env: [
     'PROJECT_ROOT=github.com/Rackspace-Segment-Support/kafka-minion/',
     'CGO_ENABLED=0',

@@ -11,5 +11,5 @@ steps:
   ]
 artifacts:
   objects:
-    location: '[gs://vajpeyitestrepo]'
+    location: 'gs://vajpeyitestrepo'
     paths: ['[ARTIFACT_PATH]']

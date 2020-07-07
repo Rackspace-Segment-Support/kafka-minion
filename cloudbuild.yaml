@@ -15,4 +15,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://vajpeyitestrepo'
-    paths: ['/builder/home/go/bin']
+    paths: ["./gopath/src/github.com/Rackspace-Segment-Support/kafka-minion/"]

@@ -6,7 +6,7 @@ steps:
   args: ['test', './...']
   env: ['PROJECT_ROOT=github.com/Rackspace-Segment-Support/kafka-minion/']
 - name: 'gcr.io/cloud-builders/go'
-  args: ['install', '-a', '-installsuffix', 'cgo', 'github.com/IanLewis/testapp']
+  args: ['install', '-a', '-installsuffix', 'cgo', 'github.com/Rackspace-Segment-Support/kafka-minion']
   env: [
     'PROJECT_ROOT=github.com/Rackspace-Segment-Support/kafka-minion/',
     'CGO_ENABLED=0',

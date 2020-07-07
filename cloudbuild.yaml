@@ -15,4 +15,3 @@ steps:
 artifacts:
   objects:
     location: 'gs://vajpeyitestrepo'
-    paths: ['kafka-minion']

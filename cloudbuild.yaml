@@ -3,7 +3,7 @@ steps:
   args: ['generate']
   env: ['PROJECT_ROOT=github.com/Rackspace-Segment-Support/kafka-minion/']
 - name: 'gcr.io/cloud-builders/go'
-  args: ['build']
+  args: ['build' 'kafka-minion']
   env: [
     'PROJECT_ROOT=github.com/Rackspace-Segment-Support/kafka-minion/',
     'CGO_ENABLED=0',
@@ -12,4 +12,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://vajpeyitestrepo'
-    paths: ['[ARTIFACT_PATH]']
+    paths: ['kafka-minion']

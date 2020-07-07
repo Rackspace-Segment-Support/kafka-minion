@@ -1,4 +1,6 @@
 steps:
+- name: 'golang'
+  args: ['go','mod','init','github.com/Rackspace-Segment-Support/kafka-minion']
 - name: 'gcr.io/cloud-builders/go'
   args: ['generate']
   env: ['PROJECT_ROOT=github.com/Rackspace-Segment-Support/kafka-minion/']

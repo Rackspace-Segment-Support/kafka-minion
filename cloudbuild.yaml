@@ -9,3 +9,7 @@ steps:
     'CGO_ENABLED=0',
     'GOOS=linux'
   ]
+artifacts:
+  objects:
+    location: '[gs://vajpeyitestrepo]'
+    paths: ['[ARTIFACT_PATH]']
